@@ -2,28 +2,30 @@
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
 def main() :
-	i = 1
-r = 0
-x = int(input("Enter one value: "))
+  d = 0
+    i = 1
+    while i <= n:
+        if n % i == 0:
+            d += 1
+        i += 1
+    return d
 
-while i <= x:
-    if x % i == 0:
-        r = r + i
-    i = i + 1
-l = x - 1
-s = 0
-while l >= 1 and s < r:
-    a = 1
-    s = 0
-    while a <= l:
-        if l % a == 0:
-            s = s + a
-        a = a + 1
-    l = l - 1
-if s > r:
-    print("not antiprime")
-else:
-    print("antiprime")
+def ap(n):
+    num_divisores = main(n)
+    i = 1
+    while i < n:
+        if main(i) >= num_divisores:
+            return "not anti-prime"
+        i += 1
+    return "anti-prime"  
+
+if _name_ == "_main_":
+    if len(sys.argv) != 2:
+        print("Uso: python antiprime.py <entero-positivo>")
+    else:
+        num = int(sys.argv[1])
+        res = ap(num)
+        print(res)
 
 	return("anti-prime")
 
