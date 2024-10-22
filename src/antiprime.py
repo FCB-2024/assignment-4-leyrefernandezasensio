@@ -1,9 +1,11 @@
 ## ADD WHATEVER ARGUMENTS ARE NECESSARY TO THE MAIN FUNCTION
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
+import sys
+
 def main(n) :
-d = 0
-i = 1
+    d = 0
+    i = 1
     while i <= n:
         if n % i == 0:
             d += 1
