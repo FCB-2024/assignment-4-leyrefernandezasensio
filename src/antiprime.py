@@ -21,7 +21,7 @@ def ap(n):
         i += 1
     return "anti-prime"  
     
-if _name_ == "_main_":
+if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Uso: python antiprime.py <entero-positivo>")
     else:
