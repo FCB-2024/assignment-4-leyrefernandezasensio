@@ -2,8 +2,8 @@
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
 def main() :
-  d = 0
-    i = 1
+d = 0
+i = 1
     while i <= n:
         if n % i == 0:
             d += 1
@@ -26,8 +26,6 @@ if _name_ == "_main_":
         num = int(sys.argv[1])
         res = ap(num)
         print(res)
-
-	return("anti-prime")
 
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__" :
